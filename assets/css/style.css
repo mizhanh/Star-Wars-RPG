@@ -1,18 +1,17 @@
 
-
-.wrapper {
+body {
 	background-color: black;
-	height: 1028px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .jumbotron {
-	background-color: black;
+	background-color: black;		
 }
 
 .container {
 	background-image: url(../images/background.jpg);
 	color: white;
-	height: 650px;
+	height: 980px;
 }
 
 h1 {
@@ -22,22 +21,29 @@ h1 {
 	font-family: "Andala Mono";
 }
 
-.col-md-2 {
-	padding-left: 20px;
+.character {
+	float: left;
 	background-color: white;
-	margin-left: 2px;
+	margin-left: 5px;
 	border-color: green;
 	border-style: solid;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+
+img {
+	padding: 5px;
 }
 
 .row {
 	padding-left: 10px;
 }
 
+
 h3 {
 	color: black;
-	font-family: "Andala Mono";
-	
+	font-family: "Andala Mono";	
 }
 
 h6 {
@@ -45,8 +51,50 @@ h6 {
 	font-size: 10px;
 }
 
-#powerObi, #powerLuke, #powerSid, #powerMaul {
+#opponentOptions{
+	height: 150px;
+}
+
+.selectCharacter {
+	width: 175px;
+	background-color: white;
+	margin-left: 5px;
+	border-color: green;
+	border-style: solid;
 	color: black;
-	font-size: 10px;
+	font-size: 14px;
 	text-align: center;
 }
+
+.changeColor {
+	background-color: red;
+	border-color: red;
+	width: 175px;
+}
+
+#defender {
+	width: 175px;
+	margin-top: 5px;
+	
+}
+
+#attack {
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.enemyCharacter {
+	margin-left: 5px;
+	text-align: center;
+}
+
+.changeOppColor {
+	background-color:black;
+	border-color: black;
+	color: white;
+	width: 175px;
+}
+
+#fightSection {
+	margin-top: 10px;
+} 
