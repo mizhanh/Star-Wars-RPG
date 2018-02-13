@@ -85,9 +85,8 @@ $(".character").click(function(){
 		enemyPower = $(this).data("power");
 		enemyCounterA = $(this).data("counterAttack");
 		$(this).removeClass("character");
-		$("#defender").append(this);
-		
-	}
+		$("#defender").append(this);	
+		}
 });
 
 // //To fight
@@ -97,8 +96,8 @@ $("#attack").click(function(){
 	if(selectCharPower>0 && enemyPower>0) {		
 		selectCharPower = selectCharPower - enemyCounterA;				
 		enemyPower = enemyPower - increaseCharAttack;
-		$(".selectCharacter").append(selectCharPower);
-		$(".enemyCharacter").append(enemyPower);
+		$(".selectCharacter").children(selectCharPower).html(selectCharPower);
+		$(".enemyCharacter").children(enemyPower).html(enemyPower);
 		console.log("My power is " + selectCharPower);
 		console.log("Defender power is " + enemyPower);
 	}
@@ -112,6 +111,7 @@ $("#attack").click(function(){
 		alert("You Defeated Your Enemy! Choose The Next Opponent");
 		$(".enemyCharacter").fadeOut("slow");		
 	}	
+
 
 
 });
